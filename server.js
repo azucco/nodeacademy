@@ -1,9 +1,11 @@
-var http = require('http');
+var http = require('http'); // queste sono le librerie di NodeJs (MODULI) e vengono caricate con il metodo require().
 var url = require("url");
+var mymodule = require("mymodule");
 
 var server = http.createServer(function(req, res) {
     var page = url.parse(req.url).pathname;
     console.log(page);
+    mymodule.sayHello();
     
     codice = 200;
 
