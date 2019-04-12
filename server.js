@@ -13,7 +13,6 @@ var server = http.createServer(function(req, res) {
         msg = 'Home';
     }else {
         msg = 'Pagina non trovata';
-        
         codice = 404;
     }
     res.writeHead(codice, {"Content-Type": "text/plain"});
